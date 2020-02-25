@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interfaccia Web</title>
+    <link href="Style.css" rel="stylesheet" type="text/css">
+    <script src="Configurazioni.js"></script>
+</head>
+<body>
+<div class="header">
+    <h1>Web Interface</h1>
+</div>
+<div class="tab">
+    <button class="tablinks" onmouseover="openMode(event, 'EasyMode')">Drive Mode</button>
+    <button class="tablinks" onmouseover="openMode(event, 'NormalMode')">Cooking Mode</button>
+    <button class="tablinks" onmouseover="openMode(event, 'HardMode')">Reverse Drive Mode</button>
+</div>
+
+<div id="EasyMode" class="tabcontent">
+    <h3>Drive Mode</h3>
+    <p>Easier mode. Controls are plain and simple.</p>
+    <button class="button" onclick="driveModeCar()">Car Mode</button>
+    <button class="button" onclick="driveModeSteam()">Steam Mode</button>
+</div>
+
+<div id="NormalMode" class="tabcontent">
+    <h3>Cooking Mode</h3>
+    <p>Tougher mode. Controls are not as easy as they look.</p>
+    <button class="button" onclick="cookingModeCar()">Car Mode</button>
+    <button class="button" onclick="cookingModeSteam()">Steam Mode</button>
+</div>
+
+<div id="HardMode" class="tabcontent">
+    <h3>Reverse Drive Mode</h3>
+    <p>Hardcore mode. Good luck.</p>
+    <button class="button" onclick="reverseDriveModeCar()">Car Mode</button>
+    <button class="button" onclick="reverseDriveModeSteam()">Steam Mode</button>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
